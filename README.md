@@ -1,4 +1,4 @@
-![Oi, Equilíbrio!](https://github.com/morrismuehl/CapoeiraEquilibrioLiederbuch/blob/main/equilibrio.jpg?raw=true) 
+![Oi, Equilíbrio!](https://github.com/morrismuehl/CapoeiraEquilibrioLiederbuch/blob/main/equilibrio.png?raw=true) 
 
 # PDF vom Liederbuch
 
@@ -46,7 +46,8 @@
 
 ### Beispiel für ein Lied
 
-``\begin{song}{title={Dificuldade no nó do atabaque eu vou fazer}}
+```
+\begin{song}{title={Dificuldade no nó do atabaque eu vou fazer}}
         \begin{verse*}
             \chord*{III, V}Difi \chord*{IV}cul dade no nó do atabaque eu vou fazer\\
             \chord*{III}Ba lança pra la\\
@@ -62,6 +63,6 @@
             \chord*{III}\textit{Tem} \ \textit{dendê no atabaque}\\
         \end{verse*}
 \end{song}
-``
+```
 
 
