@@ -1,13 +1,19 @@
 # PDF vom Liederbuch
 
-https://drive.google.com/file/d/12-0kGGJtOUCfqCVG2pe8LlUzrcaDV8oy/view?usp=sharing
++ Auf main.pdf klicken →  Downloadbutton ist oben rechts
++ Sollte das zukünftig nicht klappen kann ich die Datei auch auf Dropbox o.ä. hochladen
++ Wenn ihr wollt/könnt geht natürlich auch das repo clonen und die TeX Datei selbst kompilieren
 
-<!-- Ich kann hier nur kleinere Textdateien hochladen und keine fertige PDF. Wenn ihr die aktuelle PDF haben wollt und ihr eine TeX-distro installiert habt wisst ihr wahrscheinlich auch wie ihr die PDF kompilieren müsst. Bitte beachtet dass ich die PDF mit XeLaTeX (und **nicht** mit PDFLaTeX). Kann ich zukünftig aber auch gerne abändern. -->
+
+
+
+<!-- https://drive.google.com/file/d/12-0kGGJtOUCfqCVG2pe8LlUzrcaDV8oy/view?usp=sharing -->
+
 
 # TO-DO 
 
-- [ ] Römische Zahlen in Zahlen abändern
-    - [ ] Evtl. sogar mit "richtiger" Musikalischer Notation?
+- [ ] Römische Zahlen zu arabischen Zahlen
+    - [ ] Evtl. sogar mit "richtiger" musikalischer Notation?
 - [ ] Lieder automatisch in alphabetischer Reihenfolge auflisten
 - [ ] Irgendwie Berimbaus in den Hintergrund/Rand/Mitte/überall
 - [ ] **Mehr Lieder!**
