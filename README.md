@@ -1,4 +1,4 @@
-![Oi, Equilíbrio!](https://github.com/morrismuehl/CapoeiraEquilibrioLiederbuch/blob/main/equilibrio.jpg?raw=true) 
+![Oi, Equilíbrio!](https://github.com/morrismuehl/CapoeiraEquilibrioLiederbuch/blob/main/equilibrio.png?raw=true) 
 
 # PDF vom Liederbuch
 
