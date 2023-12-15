@@ -9,7 +9,9 @@ https://drive.google.com/file/d/12-0kGGJtOUCfqCVG2pe8LlUzrcaDV8oy/view?usp=shari
 - [ ] Römische Zahlen in Zahlen abändern
     - [ ] Evtl. sogar mit "richtiger" Musikalischer Notation?
 - [ ] Lieder automatisch in alphabetischer Reihenfolge auflisten
+- [ ] Irgendwie Berimbaus in den Hintergrund/Rand/Mitte/überall
 - [ ] **Mehr Lieder!**
+
 
 # Fehler anmerken oder Veränderungen vorschlagen
 
