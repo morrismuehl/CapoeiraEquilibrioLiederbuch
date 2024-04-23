@@ -9,7 +9,7 @@
 
 
 
-<!-- Wer diesen Link hier entdeckt hat, hat eindeutig zu wenig zu tun! https://drive.google.com/file/d/12-0kGGJtOUCfqCVG2pe8LlUzrcaDV8oy/view?usp=sharing -->
+<!-- Wer diesen Link hier entdeckt hat, hat eindeutig zu wenig zu tun! https://drive.google.com/file/d/12-0kGGJtOUCfqC{5}G2pe8LlUzrcaDV8oy/view?usp=sharing -->
 
 
 # TO-DO 
@@ -50,18 +50,18 @@
 ```
 \begin{song}{title={Dificuldade no nó do atabaque eu vou fazer}}
         \begin{verse*}
-            \chord*{III, V}Difi \chord*{IV}cul dade no nó do atabaque eu vou fazer\\
-            \chord*{III}Ba lança pra la\\
-            \chord*{III}Ba lança pra ca\\
-            \chord*{III}pra \ tu aprender\\
+            \chord*{{3}, {5}}Difi \chord*{{4}}cul dade no nó do atabaque eu vou fazer\\
+            \chord*{{3}}Ba lança pra la\\
+            \chord*{{3}}Ba lança pra ca\\
+            \chord*{{3}}pra \ tu aprender\\
             \textit{Dificuldade no nó do atabaque eu vou fazer}\\
             \textit{Balança pra la}\\
             \textit{balança pra ca}\\
             \textit{pra tu aprender}\\
-            \chord*{III}Tem \ dendê no atabaque\\
-            \chord*{III}\textit{No} \textit{atabaque tem dendê}\\
-            \chord*{III}a tabaque tem dendê\\
-            \chord*{III}\textit{Tem} \ \textit{dendê no atabaque}\\
+            \chord*{{3}}Tem \ dendê no atabaque\\
+            \chord*{{3}}\textit{No} \textit{atabaque tem dendê}\\
+            \chord*{{3}}a tabaque tem dendê\\
+            \chord*{{3}}\textit{Tem} \ \textit{dendê no atabaque}\\
         \end{verse*}
 \end{song}
 ```

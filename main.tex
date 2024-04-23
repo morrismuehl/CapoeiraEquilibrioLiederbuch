@@ -3,6 +3,9 @@
 % \documentclass[fontsize=14pt, paper=landscape, twoside]{scrreprt} % Einkommentieren für Querformat
 % \usepackage[legalpaper, landscape, margin=2in]{geometry}
 \usepackage{leadsheets}
+\usepackage[all]{nowidow}
+\widowpenalty10000
+\clubpenalty10000
 \newcommand\secTOC[1]{
     \subsection*{#1}
     \addcontentsline{toc}{section}{#1}
@@ -28,7 +31,7 @@
 %\usepackage[british]{babel}
 \usepackage{float}
 \usepackage{multicol}
-\usepackage[legalpaper, landscape, tmargin=1cm, lmargin=1cm, rmargin=1cm]{geometry}
+% \usepackage[legalpaper, landscape, tmargin=1cm, lmargin=1cm, rmargin=1cm]{geometry}
 \usepackage{setspace}
 \usepackage{caption}
 \usepackage{rotating}
@@ -108,7 +111,7 @@ Cai cai caiu bananeira \\
 \textit{An bananeira caiu} \\
 \end{verse*}
 \end{song}
-\columnbreak
+% \columnbreak
 \begin{song}{title={A hora é essa}}
     \begin{verse*}
         a hora é essa \\
@@ -234,7 +237,7 @@ Nove e três: doze\\
 \end{song}
 
 
-\columnbreak
+% \columnbreak
 \begin{song}{title={Apanha a laranja menino}}
 
     \begin{verse*}
@@ -260,6 +263,7 @@ Nove e três: doze\\
        Avisa meu mano  \\
        Avisa meu mano  \\
        Capoeira mandou me chamar \\
+
        \textit{Avisa meu mano} \\
        \textit{Avisa meu mano} \\
        \textit{Capoeira mandou me chamar}\\
@@ -303,7 +307,7 @@ Nove e três: doze\\
 \end{song}
 
 
-\columnbreak
+% \columnbreak
 \begin{song}{title={Balança Equilíbrio}}
     \begin{verse*}
         \chord*{{4}}Ba lança Equilíbrio\\
@@ -371,7 +375,7 @@ Nove e três: doze\\
         \end{verse*}
 \end{song}
 
-\columnbreak
+% \columnbreak
 \begin{song}{title={Berimbau faz (Chin Chin Dong Dong)}}
         \begin{verse*}
             \chord*{{5}}Dong, \ Dong, Dong\\
@@ -390,7 +394,7 @@ Nove e três: doze\\
         \end{verse*}
 \end{song}
 
-\columnbreak
+% \columnbreak
  \begin{song}{title={Biriba é pau é Madeira}}
          \begin{verse*}
              Madeira de maḉaranduba\\
@@ -450,7 +454,7 @@ Nove e três: doze\\
 \end{song}
 
 
-\columnbreak
+% \columnbreak
 
 \begin{song}{title={Canarinho da alemanha}}
     \begin{chorus*}
@@ -480,7 +484,7 @@ Nove e três: doze\\
             \textit{Canarinho da alemanha...}\\
         \end{verse*}
 \end{song}
-\columnbreak
+% \columnbreak
 \begin{song}{title={Capiniero}}
         \begin{verse*}
             \chord*{{4}}Ca piniero de ioio\\
@@ -502,7 +506,7 @@ Nove e três: doze\\
         \end{verse*}
 \end{song}
 
-\columnbreak
+% \columnbreak
 \begin{song}{title={Capoeira é da nossa cor}}
         \begin{verse*}
             au ê au ê au ê ê\\
@@ -564,7 +568,7 @@ Nove e três: doze\\
         \end{verse*}
 \end{song}
 
-\columnbreak
+% \columnbreak
 
 \begin{song}{title={Dificuldade no nó do atabaque eu vou fazer}}
         \begin{verse*}
@@ -583,10 +587,10 @@ Nove e três: doze\\
         \end{verse*}
 \end{song}
 
-\columnbreak
+% \columnbreak
 \begin{song}{title={Din Din}}
         \begin{verse*}
-            \chord*{{4}}Din Din é o nome de vovo\\
+            \chord*{{4}}Din \ Din é o nome de vovo\\
             Din Din é o nome de madrinha\\
             Din Din Din Din Din Din e dinheiro dinheiro for feito pra gastar\\
             \textit{Din Din eu o nome de vovo}\\
@@ -688,7 +692,7 @@ Nove e três: doze\\
         \end{verse*}
 \end{song}
 
-\columnbreak
+% \columnbreak
 \begin{song}{title={Em cada Som Em cada Toque}}
     \begin{chorus*}
             Laaaa la awê la awê la awê la awa\\
@@ -714,7 +718,7 @@ Nove e três: doze\\
         \end{verse*}
 \end{song}
 
-\columnbreak
+% \columnbreak
 \begin{song}{title={Eu fui No Sonho}}
     \begin{chorus*}
             \textit{Eu fui No sonho\\
@@ -754,7 +758,7 @@ Nove e três: doze\\
             e a forma de cantar\\
             era gritar no terreiro\\
 
-            \columnbreak
+            % \columnbreak
 
             logo quando acordei\\
             tive o berimbau na mão\\
@@ -772,7 +776,7 @@ Nove e três: doze\\
        \end{verse*} 
 \end{song}
 
-\columnbreak
+% \columnbreak
 \begin{song}{title={Eu vim aqui buscar}}
         \begin{verse*}
             \chord*{{4}}Eu \ vim aqui buscar\\
@@ -821,13 +825,15 @@ Nove e três: doze\\
             aprendei a jogar Capoeira de Angola\\
             do na beira do mar\\
 
-            \chord*{{1}}\textit{Foi} na beira do mar\\
+            \chord*{{1}}\textit{Fo} \textit{i} na beira do mar\\
              \textit{Foi na beira do mar\\}
-            \textit{aprendei a jogar Capoeira de Angola do na beira do mar\\}
+            \textit{aprendei a jogar \\
+            Capoeira de Angola \\
+            do na beira do mar\\}
         \end{verse*}
 \end{song}
 
-\columnbreak
+% \columnbreak
 \begin{song}{title={Foi No Clarão da Lua}}
     \begin{chorus*}
             \textit{Foi\\
@@ -839,21 +845,13 @@ Nove e três: doze\\
         \begin{verse*}
             Deu armada deu rasteira\\
             meia-Lua e a ponteira\\
-            Logo no primeiro round
+            Logo no primeiro round \\
             venceu o capoeira\\
             Embaixo do ringue\\
             Mestre Mentirinha vibrava\\
             Tocando seu berimbau\\
             Enquanto a Muzenza cantava Mas foi\\
             \textbf{(Foi...)}\\
-            Deu armada deu rasteira \\
-            meia-Lua e a ponteira\\
-            Logo no primeiro round\\
-            venceu o capoeira\\
-            Embaixo do ringue \\ 
-            Mestre Mentirinha vibrava\\
-            Tocando seu berimbau\\
-            Enquanto a Muzenza cantava Mas foi\\
             \textbf{(Foi...)}
         \end{verse*}
 \end{song}
@@ -995,7 +993,7 @@ Nove e três: doze\\
             eu passo ele tira o chapéu!\\
         \end{verse*}
 \end{song}
-\columnbreak
+% \columnbreak
 \begin{song}{title={Leva eu}}
         \begin{verse*}
             Leva \chord*{{5}}e u leva eu pra vadiar (aaaa)\\
@@ -1083,7 +1081,7 @@ Nove e três: doze\\
         \end{verse*}
 \end{song}
 
-\columnbreak
+% \columnbreak
 \begin{song}{title={Meu Barco Minha Canoa}}
         \begin{verse*}
             \chord*{{4}}Me u barco minha canoa\\
@@ -1112,7 +1110,7 @@ Nove e três: doze\\
             \textit{Não deixo essa fonte secar}\\
         \end{verse*}
 \end{song}
-\columnbreak
+% \columnbreak
 \begin{song}{title={Meu Cantador}}
         \begin{verse*}
             \chord*{{1}}O \ meu cantador\\
@@ -1139,7 +1137,7 @@ Nove e três: doze\\
         \end{verse*}
 \end{song}
 
-\columnbreak
+% \columnbreak
 \begin{song}{title={Minha Veranda}}
         \begin{verse*}
             \chord*{{5}}Aqui \ é minha casa\\
@@ -1336,7 +1334,7 @@ Nove e três: doze\\
         \end{verse*}
 \end{song}
 
-\columnbreak
+% \columnbreak
 
 \begin{song}{title={O barco passou no rio}}
         \begin{verse*}
@@ -1541,7 +1539,7 @@ Nove e três: doze\\
         \end{verse*}
 \end{song}
 
-\columnbreak
+% \columnbreak
 
 \begin{song}{title={Procurei um amigo }}
         \begin{verse*}
@@ -1565,7 +1563,7 @@ Nove e três: doze\\
             \textit{Faz seis}\\
         \end{verse*}
 \end{song}
-\columnbreak
+% \columnbreak
 \begin{song}{title={Pimenta madura que dá semente}}
         \begin{verse*}
             Pimenta madura que dá semente\\
@@ -1829,7 +1827,7 @@ Nove e três: doze\\
         \end{verse*}
 \end{song}
 
-\columnbreak
+% \columnbreak
 \begin{song}{title={Vou, mandar, lecô cajuê }, subtitle={\begin{small}
             \url{https://www.youtube.com/watch?v=mv8Jr-BHGzg}
 \end{small}}}
