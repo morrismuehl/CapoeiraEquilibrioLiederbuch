@@ -15,7 +15,7 @@
 # TO-DO 
 
 + [ ] Metaphorische Bedeutungen der Lieder in 1-2 kurzen Sätzen nennen.
-- [ ] Römische Zahlen zu arabischen Zahlen
+- [X] Römische Zahlen zu arabischen Zahlen
     - [ ] Evtl. sogar mit "richtiger" musikalischer Notation?
 - [ ] Lieder automatisch in alphabetischer Reihenfolge auflisten
 - [ ] Irgendwie Berimbaus in den Hintergrund/Rand/Mitte/überall
