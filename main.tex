@@ -1,8 +1,10 @@
 %!TEX TS-program = xelatex
-\documentclass[fontsize=14pt, a4paper, twoside]{scrreprt}
-% \documentclass[fontsize=14pt, paper=landscape, twoside]{scrreprt} % Einkommentieren für Querformat
+% \documentclass[fontsize=14pt, twoside, DIV=1]{scrreprt}
+\documentclass[fontsize=14pt, paper=a4, twoside, DIV=20]{scrreprt} % Einkommentieren für Querformat
 % \usepackage[legalpaper, landscape, margin=2in]{geometry}
 \usepackage{leadsheets}
+\usepackage{booktabs}
+\usepackage{nicefrac}
 \usepackage[all]{nowidow}
 \widowpenalty10000
 \clubpenalty10000
@@ -11,6 +13,7 @@
     \addcontentsline{toc}{section}{#1}
     \markboth{#1}{#1}}
  \newcommand\subsecTOC[1]{
+    % \needspace{12\baselineskip}
     \subsection*{#1}
     \addcontentsline{toc}{subsection}{#1}
     \markboth{#1}{#1}}
@@ -18,7 +21,7 @@
     \chapter*{#1}
     \addcontentsline{toc}{chapter}{#1}
     \markboth{#1}{#1}}
-\definesongtitletemplate{mytemp}{\subsecTOC{\songproperty{title}} \songproperty{subtitle}}
+\definesongtitletemplate{mytemp}{\subsecTOC{\songproperty{title}}\songproperty{subtitle}}
 \setleadsheets{title-template = mytemp}
 \usepackage{polyglossia} %XeLaTeX
 \usepackage{fontspec-xetex}
@@ -33,18 +36,22 @@
 \usepackage{multicol}
 % \usepackage[legalpaper, landscape, tmargin=1cm, lmargin=1cm, rmargin=1cm]{geometry}
 \usepackage{setspace}
+\usepackage{tabularx}
+% \usepackage{shortstack}
+\usepackage{xcolor}
+\usepackage{colortbl}
 \usepackage{caption}
 \usepackage{rotating}
 \usepackage{fbox}
 \usepackage{hyperref}
-\usepackage[version=4]{mhchem}
+% \usepackage[version=4]{mhchem}
 \usepackage{graphicx}
 \usepackage{amsmath,amsthm,amssymb,bm}
 \usepackage{multirow}
 \usepackage{gensymb}
 \usepackage{acronym}
 \usepackage{subcaption}
-\setlength{\columnseprule}{1pt}
+\setlength{\columnseprule}{2pt}
 \setlength{\parindent}{0cm}
 % \setstretch{1}
 \title{Lieder Die Wir Singen}
@@ -58,23 +65,84 @@
 \tableofcontents
 % \legalpaper
 
-% \chapter*{Rhythmus}
-%
+
+\chapter*{Rhythmus}
+
+
+{\small
+\section*{Sao bento grande}
+\begin{center}
+    \centering
+    \begin{tabularx}{\textwidth}{|c|c|X|X|X|X|X|X|X|X|}
+        \hline
+        \multirow{3}{*}{\shortstack{Berimbau    \\ Saite}}      & Saite hoch & \cellcolor{green}Ding &                       &   &                       &   &                        &                        &  \\ \cline{2-10}
+                                                 & Saite rau    &            &                        &                       &   &                       &   & \cellcolor{green}Tsch  & \cellcolor{green}Tsch \\ \cline{2-10}
+                                                 & Saite tief   &            &                        & \cellcolor{green}Dong &   & \cellcolor{green}Dong &   &                        &                       \\ \hline
+    \multirow{2}{*}{\shortstack{Caxixi \\ Cabasa}} &  Caxixi           &                        &                       &   &                       &   &                        &                        &  \\ \cline{2-10}
+                                                 &  Cabasa            &            &                        &                       &   &                       &   &                        &                       \\ \hline \hline
+        \multicolumn{2}{|c|}{Puls}                 &\textbf{ 1}            & \textbf{\&}                    & \textbf{2} & \textbf{\&} & \textbf{3}                       & \textbf{\&} & \textbf{4} & \textbf{\&}                                                               \\ \hline
+\end{tabularx}
+\end{center}
+
+
+\section*{Sao bento grande de Angola}
+
+\begin{center}
+    \centering
+    \begin{tabularx}{\textwidth}{|c|c|X|X|X|X|X|X|X|X|}
+        \hline
+        \multirow{3}{*}{\shortstack{Berimbau        \\ Saite}}      & Saite hoch            &   &    & \cellcolor{green}Ding   &    &   &                                                                     &                        &  \\ \cline{2-10}
+                                                     & Saite rau    &                       &   &    &                         &    &   & \cellcolor{green}Tsch  & \cellcolor{green}Tsch \\ \cline{2-10}
+                                                     & Saite tief   & \cellcolor{green}Dong &   &    &                         &    &   &                        &                       \\ \hline
+        \multirow{2}{*}{\shortstack{Caxixi \\ Cabasa}} & Caxixi                &   &    & &    &\cellcolor{yellow}Chack    &                                                                     &                        &  \\ \cline{2-10}
+                                                     & Cabasa       &                       &   &    &                         &    &   &                        &                       \\ \hline \hline
+        \multicolumn{2}{|c|}{Puls}                 &\textbf{ 1}            & \textbf{\&}                    & \textbf{2} & \textbf{\&} & \textbf{3}                       & \textbf{\&} & \textbf{4} & \textbf{\&}                                                               \\ \hline
+\end{tabularx}
+\end{center}
+
+\section*{Pandeiro Atabaque und Klatschen}
+\begin{center}
+    \centering
+    \begin{tabularx}{\textwidth}{|c|c|X|X|X|X|X|X|X|X|}
+        \hline
+        \multirow{2}{*}{Pandeiro}         & Fell        & \cellcolor{green}Tum  &            & \cellcolor{orange}Ta &                     & \cellcolor{green}Tum  &            &                         &                          \\ \cline{2-10}
+                                          & Schellen    &                       &            &                      &                     &                       &            & \cellcolor{yellow}hoch  & \cellcolor{yellow}runter \\ \hline \hline
+               \multirow{2}{*}{Atabaque}  & Rechts      & \cellcolor{yellow}Tum &            &                      &                     & \cellcolor{yellow}Tum &            &                         &                          \\ \cline{2-10}
+                                          & Links       &                       &            & \cellcolor{orange}Ta &                     &                       &            &                         & \cellcolor{orange}Ta     \\ \hline \hline
+               \multirow{3}{*}{Klatschen} & Ver. 1      & \cellcolor{green}Ta   &            & \cellcolor{green}Ta  &                     & \cellcolor{green}Ta   &            &                         &                          \\ \cline{2-10}
+                                          & Ver. 2      & \cellcolor{green}Ta   &            &                      & \cellcolor{green}Ta &                       &            & \cellcolor{green}Ta     &                          \\ \cline{2-10}
+                                          & Angola      &  \cellcolor{green}Ta                        &            & \cellcolor{green}Ta &                     &                       &            &                         & \\ \hline \hline
+        % \multirow{2*}{Klatschen}         & Ver. 1   & \cellcolor{green}Ta   &             & \cellcolor{green}Ta  &                     & \cellcolor{green}Ta   &             &                        &                          \\ \cline{2-10}
+        %                                  & Ver. 2   & \cellcolor{green}Ta   &             &                      & \cellcolor{green}Ta &                       &             & \cellcolor{green}Ta    &                          \\ \cline{2-10}
+        %                                  & Angola   &                       &             &                      &                     &                       &             &                        &                          \\ \hline \hline
+        \multicolumn{2}{|c|}{Puls}        & \textbf{ 1} & \textbf{\&}           & \textbf{2} & \textbf{\&}          & \textbf{3}          & \textbf{\&}           & \textbf{4} & \textbf{\&}            \\ \hline
+\end{tabularx}
+\end{center}
+
+
+}
+
+% \section*{Notation}
+% \centering
+% \textbf{Sao bento Grande}: \chord{{1}}Ching,  \chord{{2}}Ching , \chord{{3}}Ding, \chord{{4}}Dong, \chord{{5}}Dong
+% \textbf{Angola}: \chord{{1}}Ching,  \chord{{2}}Ching , \chord{{3}}Dong, \chord{{4}}Ding, \chord{{5}}Chack!
+% \textbf{Pandeiro, Atabaque (etc)}: \chord{{3}}Bum, \chord{{4}}Pa, \chord{{5}}Bum
+
 % \begin{table}[htbp]
+
 % \centering
 % \caption{caption}
-% \label{tab:berimbau}
-% \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
-%     \multirow{3}{*}{Berimbau Saite} &  &  &  &  &  &  &  &  & \\
-%     & &  &  &  &  &  &  &  & \\
-%     &  &  &  &  &  &  &  &  & \\
-% \multirow{2}{*}{Berimbau Caxixi und Cabasa}  &  &  &  &  &  &  &  &  & \\
-%    &  &  &  &  &  &  &  & \\
-%     \multicolumn{2}{c}{Puls} & 1  & \& & 2  & \& & 3 & \& & 4 & \& \\
+% \label{tab:label}
+% \begin{tabular}{lcc}
+%   Hier & steht  & was
 % \end{tabular}
 % \end{table}
 
+
 \chapter*{Notation}
+
+Die hier im Liederbuch teils genutzte Notation bezieht sich auf den Rhythmus der Berimbau und folgt folgendem Schema. Wer sich am klassichen \nicefrac{4}{4}-Takt orientieren will nutzt kann auf die vorherige Seite schauen
+
 \textbf{Sao bento Grande}: \chord{{1}}Ching,  \chord{{2}}Ching , \chord{{3}}Ding, \chord{{4}}Dong, \chord{{5}}Dong
 
 \textbf{Angola}: \chord{{1}}Ching,  \chord{{2}}Ching , \chord{{3}}Dong, \chord{{4}}Ding, \chord{{5}}Chack!
@@ -104,22 +172,20 @@ tem que ter energia pra poder jogar\\
 
 \begin{song}{title={A Bananeira caiu}}
 \begin{verse*}
-
 O facao bateu embaixo\\
 \textit{A bananeira caiu} \\
 Cai cai caiu bananeira \\
 \textit{An bananeira caiu} \\
 \end{verse*}
 \end{song}
-% \columnbreak
+\columnbreak
 \begin{song}{title={A hora é essa}}
     \begin{verse*}
         a hora é essa \\
         a hora é essa \\
         \textit{
             a hora é essa \\
-            a hora é essa \\
-        }
+            a hora é essa \\        }
     \end{verse*}
 \begin{verse*}
  \chord*{{1}}be rimbau tocou na capoeira \\
@@ -237,7 +303,7 @@ Nove e três: doze\\
 \end{song}
 
 
-% \columnbreak
+\columnbreak
 \begin{song}{title={Apanha a laranja menino}}
 
     \begin{verse*}
@@ -268,8 +334,7 @@ Nove e três: doze\\
        \textit{Avisa meu mano} \\
        \textit{Capoeira mandou me chamar}\\
     \end{verse*}
-          \end{song}
-
+     \end{song}
 \newpage
 \chapTOC{B}
 
@@ -375,7 +440,7 @@ Nove e três: doze\\
         \end{verse*}
 \end{song}
 
-% \columnbreak
+\columnbreak
 \begin{song}{title={Berimbau faz (Chin Chin Dong Dong)}}
         \begin{verse*}
             \chord*{{5}}Dong, \ Dong, Dong\\
@@ -395,17 +460,18 @@ Nove e três: doze\\
 \end{song}
 
 % \columnbreak
- \begin{song}{title={Biriba é pau é Madeira}}
+ \begin{song}{title={Biriba é pau e Madeira}}
          \begin{verse*}
              Madeira de maḉaranduba\\
              Madeira de jacarandá\\
              \textit{Madeira de maḉaranduba}\\
              \textit{Madeira de jacarandá}\\
-             Beriba é pau, é Madeira\\
+             Beriba é pau, e Madeira\\
              \textit{Beriba é pra tocar}\\
          \end{verse*}
  \end{song}
  
+ \columnbreak
 
  \begin{song}{title={Boa viagem}}
      \begin{verse*}
@@ -568,11 +634,11 @@ Nove e três: doze\\
         \end{verse*}
 \end{song}
 
-% \columnbreak
+\columnbreak
 
 \begin{song}{title={Dificuldade no nó do atabaque eu vou fazer}}
         \begin{verse*}
-            \chord*{III, V}Difi \chord*{{4}}cul dade no nó do atabaque eu vou fazer\\
+            \chord*{{3}, {5}}Difi \chord*{{4}}cul dade no nó do atabaque eu vou fazer\\
             \chord*{{3}}Ba lança pra la\\
             \chord*{{3}}Ba lança pra ca\\
             \chord*{{3}}pra \ tu aprender\\
@@ -692,7 +758,7 @@ Nove e três: doze\\
         \end{verse*}
 \end{song}
 
-% \columnbreak
+\columnbreak
 \begin{song}{title={Em cada Som Em cada Toque}}
     \begin{chorus*}
             Laaaa la awê la awê la awê la awa\\
@@ -901,6 +967,7 @@ Nove e três: doze\\
             Lalae La Lae Lalae La \\
             Lalae La Lae Lalae La \\}
     \end{chorus*}
+     {\small
     \begin{verse*}
             Venho de um barco sem permissão sem quarto \\
             Os meus irmãos talvez posso te encontrar \\
@@ -916,7 +983,7 @@ Nove e três: doze\\
             Ao ver o açoite do chicote a machucar \\
             E nossa praia meu sangue não vai para \\
             E essa dor não limita o meu oh lele \\
-    \end{verse*}
+    \end{verse*}}
 \end{song}
 
 \begin{song}{title={La Vai Viola}}
@@ -1612,6 +1679,7 @@ Nove e três: doze\\
         \end{verse*}
 \end{song}
 
+\columnbreak
 \begin{song}{title={Quem vem lá? Sou eu}}
         \begin{verse*}
             \chord*{{3}}Qu em vem lá? Sou eu\\
