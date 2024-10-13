@@ -1,0 +1,3 @@
+PWD /home/morris/Uni/tex/CapoeiraEquilibrioLiederbuch
+INPUT /nix/store/nr2ib36d06bmvfk5znjn029zh5n7z510-texlive-combined-full-2022-final/share/texmf-var/web2c/texmf.cnf
+INPUT /nix/store/nr2ib36d06bmvfk5znjn029zh5n7z510-texlive-combined-full-2022-final/share/texmf-var/web2c/xetex/xelatex.fmt
