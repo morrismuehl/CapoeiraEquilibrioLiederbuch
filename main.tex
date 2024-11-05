@@ -53,12 +53,18 @@
 \usepackage{subcaption}
 \setlength{\columnseprule}{2pt}
 \setlength{\parindent}{0cm}
+
+\ExplSyntaxOn
+    \UseName{prop_new:c}{l__leadsheets_songs_height_prop}
+\ExplSyntaxOff
 % \setstretch{1}
 \title{Lieder Die Wir Singen}
 \author{Capoeira Equilíbrio}
 \titlehead{\centering\includegraphics[width=.7\textwidth]{equilibrio.png}}
 \date{\today}
 \graphicspath{{bilder/}}
+
+
 \begin{document}
 \maketitle
 \newpage
@@ -140,7 +146,7 @@
 
 
 \chapter*{Notation}
-
+jjjjj/
 Die hier im Liederbuch teils genutzte Notation bezieht sich auf den Rhythmus der Berimbau und folgt folgendem Schema. Wer sich am klassichen \nicefrac{4}{4}-Takt orientieren will kann auf die vorherige Seite schauen
 
 \textbf{Sao bento Grande}: \chord{{1}}Ching,  \chord{{2}}Ching , \chord{{3}}Ding, \chord{{4}}Dong, \chord{{5}}Dong
@@ -285,6 +291,26 @@ Nove e três: doze\\
 
 
 \end{verse*}
+\end{song}
+
+\begin{song}{title={A maré ta cheia}}
+        \begin{chorus*}
+                A maré ta cheia ioio \\
+                A maré ta cheia iaia \\
+                \textit{A maré ta cheia ioio \\
+                A maré ta cheia iaia \\}
+        \end{chorus*}
+        \begin{verse*}
+                A maré subiu \\
+                \textit{Desce maré} \\
+                A maré desceu \\
+                \textit{Sobe maré} \\
+                De maré, de maré \\
+                \textit{Vou pra ilha de maré} \\
+                De maré, de maré \\
+                \textit{Vou pra ilha de maré} \\
+
+        \end{verse*}
 \end{song}
 
 \begin{song}{title={Apanha a Laranja}}
@@ -1118,7 +1144,14 @@ Nove e três: doze\\
             Mandei pintar de amarelo\\
             Caiei, Caiei, Caiei\\
     \end{verse*}
-        
+     \begin{verse*}
+            Amarelo não e dorado \\
+            Dorado do meu berimbau\\
+            Dorado, cordão de ouro\\
+            Besouro, besouro, besouro\\
+    \end{verse*}
+   
+
 \end{song}
 
 \begin{song}{title={Maracangalha}}
